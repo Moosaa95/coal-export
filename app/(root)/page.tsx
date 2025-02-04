@@ -1,14 +1,10 @@
 'use client'
 import Grid from "@/components/Grid";
 import HeroBanner from "@/components/Hero-Two";
-import Mission from "@/components/Mission";
 import ValueProposition from "@/components/Value";
 
 import React from "react";
 import { motion } from "framer-motion";
-import { FaIndustry, FaBolt, FaFire, FaBuilding, FaShip } from "react-icons/fa";
-import Image from "next/image";
-
 
 export default function Home() {
     return (
@@ -65,6 +61,7 @@ const services = [
 // import { motion } from "framer-motion";
 
 import { FaRecycle, FaLeaf, FaWind, FaWater, FaTree } from "react-icons/fa";
+import Image from "next/image";
 
 const sustainabilityPoints = [
   {
@@ -208,9 +205,11 @@ const logisticsSteps = [
                 <div
                   className={`w-full md:w-1/2 ${index % 2 === 0 ? "order-2" : "order-1"}`}
                 >
-                  <img
+                  <Image
                     src={step.image}
                     alt={step.title}
+                    width={350}
+                    height={350}
                     className="w-full h-[350px] object-cover rounded-lg shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105"
                   />
                 </div>
