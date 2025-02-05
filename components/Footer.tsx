@@ -11,20 +11,23 @@ const Footer: React.FC = () => (
     <div className="container mx-auto px-4">
       <div className="flex flex-col items-center my-16">
         <h1 className="font-bold text-4xl md:text-5xl text-center">
-          Ready to secure reliable <span className="text-purple">coal exports</span> for your business?
+        Partner with Us for Seamless  <span className="text-purple">Trading</span>
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Let’s discuss how our quality coal export services can meet your energy and supply chain needs with efficiency and sustainability.
+        Get in touch today to explore how we can support your commodity trading and supply chain needs.
         </p>
-        <MagicButton link="/contact" title="Get in Touch" position="right" icon={<FaLocationArrow />} />
+        <MagicButton link="/contact" title="Contact Us" position="right" icon={<FaLocationArrow />} />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* About the Coal Export Business */}
         <div>
-          <h2 className="text-lg font-semibold text-white mb-4">About Our Coal Export Services</h2>
+          <h2 className="text-lg font-semibold text-white mb-4">About Trustbox Global Investment Limited</h2>
           <p className="text-gray-400">
-            We specialize in the export of high-quality coal to meet the growing demand for energy production and industrial needs globally. With years of experience, we ensure reliable supply and on-time delivery.
+          We facilitate seamless trade by investing
+          in key sectors with established partners,
+          ensuring sustainable and profitable
+          ventures for our stakeholders
           </p>
         </div>
 
@@ -57,14 +60,14 @@ const Footer: React.FC = () => (
               <FaInstagram size={24} />
             </motion.a>
           </div>
-          <p className="text-gray-400">Our Main Office: 123 Coal Road, Mining City, Nigeria</p>
-          <p className="text-gray-400">Email: coalexports@business.com</p>
-          <p className="text-gray-400">Phone: +234 123 456 789</p>
+          <p className="text-gray-400">Plot 2787, Shehu Shagari Way, Maitama Abuja, Nigeria</p>
+          <p className="text-gray-400">Email: trustboxng@gmail.com</p>
+          <p className="text-gray-400">Phone: +234 (0) 805 271 2266</p>
         </div>
       </div>
 
       <p className="text-center text-gray-500 mt-8">
-        &copy; {new Date().getFullYear()} Coal Exporters Ltd. All rights reserved.
+        &copy; {new Date().getFullYear()} Trustbox Global Investment Limited. All rights reserved.
       </p>
     </div>
   </footer>

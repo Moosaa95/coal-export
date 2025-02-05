@@ -108,13 +108,13 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-      Reliable & Efficient Global Coal Export Solutions 
+        Empowering Global Trade Through Strategic Investment & Commodity Aggregation
       </p>
       <TextGenerateEffect 
             className='text-2xl md:text-7xl font-bold dark:text-white'
-            words='Powering industries worldwide with high-quality coal exports.'
+            words="Connecting Sub-Saharan Africa's resources to global markets."
         />
-    <MagicButton title='Learn More' icon={<FiArrowRight />} position='right' />
+    <MagicButton link="/our-services" title='Explore Our Services' icon={<FiArrowRight />} position='right' />
 
     </div>
   );

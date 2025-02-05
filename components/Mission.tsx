@@ -12,7 +12,7 @@ interface Props {
 const content = [
   {
     title: "Global Reach",
-    description: "Supplying high-quality coal to industries across the world with reliable logistics.",
+    description: "Supplying high-quality coal and other commodities to industries worldwide through a reliable supply chain.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--blue-500))] flex items-center justify-center text-white">
         <FaGlobe size={50} className="text-cyan-400" />
@@ -21,8 +21,8 @@ const content = [
     ),
   },
   {
-    title: "Sustainable Mining",
-    description: "Committed to responsible extraction and environmental sustainability.",
+    title: "Sustainable Practices",
+    description: "Promoting sustainability in our mining and trading processes while minimizing environmental impact.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--green-500),var(--emerald-500))] flex items-center justify-center text-white">
         <FaLeaf size={50} className="text-green-400" />
@@ -32,7 +32,7 @@ const content = [
   },
   {
     title: "Reliable Shipping",
-    description: "Ensuring on-time coal deliveries through efficient supply chain management.",
+    description: "Ensuring on-time deliveries of commodities worldwide, with a focus on efficiency and reliability.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--blue-500),var(--gray-500))] flex items-center justify-center text-white">
         <FaShip size={50} className="text-blue-400" />
@@ -42,7 +42,7 @@ const content = [
   },
   {
     title: "Strong Partnerships",
-    description: "Building long-term relationships with global industries and suppliers.",
+    description: "Building long-term relationships with global industries, suppliers, and partners to ensure mutual growth.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--yellow-500),var(--orange-500))] flex items-center justify-center text-white">
         <FaHandshake size={50} className="text-yellow-400" />
@@ -52,7 +52,7 @@ const content = [
   },
   {
     title: "Our Mission",
-    description: "To be a trusted provider of premium coal, ensuring efficiency, sustainability, and responsible sourcing.",
+    description: "To be a leader in commodity trading, providing premium products with a commitment to sustainability and responsible sourcing.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         <FaBullseye size={50} className="text-cyan-400" />
@@ -62,7 +62,7 @@ const content = [
   },
   {
     title: "Our Vision",
-    description: "To lead the global coal export market with innovation, transparency, and eco-friendly practices.",
+    description: "To become the most trusted global partner in commodity trading and supply chain solutions.",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <FaMapMarkedAlt size={50} className="text-yellow-400" />
@@ -72,7 +72,7 @@ const content = [
   },
   {
     title: "Industry Expertise",
-    description: "Decades of experience in mining, logistics, and international trade.",
+    description: "Leveraging decades of experience in the global commodity trading and supply chain management sectors.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--gray-500),var(--black))] flex items-center justify-center text-white">
         <FaIndustry size={50} className="text-gray-400" />
@@ -82,7 +82,10 @@ const content = [
   },
 ];
 
-export default function Mission({ title = "About Us", description = "We are a leading coal export company, dedicated to providing premium-quality coal to industries worldwide. With a strong commitment to sustainability, reliability, and responsible sourcing, we ensure efficient supply chain solutions that meet global energy demands." }: Props) {
+export default function Mission({
+  title = "About Trustbox Global Investment Limited",
+  description = "Trustbox Global Investment Limited specializes in providing premium-quality commodities to industries worldwide. With a commitment to sustainability, reliable logistics, and responsible sourcing, we ensure efficient supply chain solutions that meet global energy and industrial demands.",
+}: Props) {
   return (
     <section className="w-[100vw] space-y-4">
         <motion.h2

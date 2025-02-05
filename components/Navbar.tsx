@@ -41,10 +41,10 @@ const Navbar: React.FC = () => {
 
             {/* <p className="hidden text-white/90 md:block"><span className="font-bold">Email:</span>mbgigtlimited@gmail.com</p> */}
             <div className="flex items-center gap-1 space-x-10">
-              <p><span>Phone:</span>+2348033336384</p>
-              <p><span>Email:</span>enquiries@example.com</p>
-              <p className="hidden md:block"><span>Head Office:</span>19, Alade Avenue, Ikeja, Lagos</p>
-              <p className="hidden md:block"><span>Regional Offices:</span>Plot 400b, House 1b, Baguard Khalid street, Opposite Brain and Hammer Estate, Gwarinpa, Abuja FCT</p>
+              <p><span>Phone:</span>+234 (0) 703 220 4422, +234 (0) 805 271 2266</p>
+              <p><span>Email:</span>trustboxng@gmail.com</p>
+              <p className="hidden md:block"><span>Address:</span>Plot 2787, Shehu Shagari Way, Maitama Abuja, Nigeria</p>
+              {/* <p className="hidden md:block"><span>Regional Offices:</span>Plot 400b, House 1b, Baguard Khalid street, Opposite Brain and Hammer Estate, Gwarinpa, Abuja FCT</p> */}
               {/* arrow right h-4 w-4 inline-flex justify-center items-center */}
             </div>
           </motion.div>
@@ -52,8 +52,8 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         
         {/* Logo */}
-        <Link className="text-2xl font-bold text-indigo-600" href="/">
-          Export
+        <Link className={`text-2xl font-bold ${isScrolled ? 'text-white-300' : 'text-indigo-600'}`} href="/">
+          Trustbox Global Investment Limited
         </Link>
 
 

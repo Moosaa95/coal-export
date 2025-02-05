@@ -12,15 +12,18 @@ export default function Home() {
             <div>
                 <HeroBanner />
             </div>
+            <div>
+              <About />
+            </div>
             {/* <div>
                 <Mission />
             </div> */}
             <div className='flex flex-col my-10'>
                 <Grid title="Our Core Services" services={services} link='/services' />
             </div>
-            <div>
+            {/* <div>
                 <ValueProposition />
-            </div>
+            </div> */}
             <div>
             <SustainabilitySection />
             </div>
@@ -32,73 +35,88 @@ export default function Home() {
 }
 
 const services = [
-    {
-        id: 1,
-        title: "Coal Mining & Extraction",
-        description: "Efficient and sustainable coal mining operations ensuring high-quality output.",
-        icon: "/assets/svg/coal-svg5.svg",
-        // link: "/services#coal-mining"
-    },
-    {
-        id: 2,
-        title: "Coal Processing & Refining",
-        description: "Advanced coal processing techniques to enhance fuel quality and reduce emissions.",
-        icon: "/assets/svg/coal-svg3.svg",
-        // link: "/services#coal-processing"
-    },
-    {
-        id: 3,
-        title: "Coal Export & Logistics",
-        description: "Reliable coal export services with streamlined logistics for global delivery.",
-        icon: "/assets/svg/coal-svg4.svg",
-        // link: "/services#coal-export"
-    },
+  {
+      id: 1,
+      title: "Commodity Aggregation",
+      description: "Sourcing and consolidating high-quality commodities from trusted suppliers.",
+      icon: "/assets/svg/commodity.svg",
+      // link: "/services#commodity-aggregation"
+  },
+  {
+      id: 2,
+      title: "Global Trade & Export",
+      description: "Connecting Africa’s rich resources to the global market with efficiency.",
+      icon: "/assets/svg/global-trade1.svg",
+      // link: "/services#global-trade"
+  },
+  {
+      id: 3,
+      title: "Logistics & Transportation",
+      description: "Seamless logistics ensuring smooth transport from mine to market.",
+      icon: "/assets/svg/logistics.svg",
+      // link: "/services#logistics"
+  },
+  {
+      id: 4,
+      title: "Investment & Partnerships",
+      description: "Strategic collaborations for sustainable business growth and expansion.",
+      icon: "/assets/svg/investment.svg",
+      // link: "/services#investment"
+  },
 ];
+
 
 
 // "use client";
 // import React from "react";
 // import { motion } from "framer-motion";
 
-import { FaRecycle, FaLeaf, FaWind, FaWater, FaTree } from "react-icons/fa";
+import { FaRecycle,  FaTree, FaIndustry, FaShippingFast, FaGlobe, FaHandshake } from "react-icons/fa";
 import Image from "next/image";
 
 const sustainabilityPoints = [
   {
-    title: "Renewable Energy",
+    title: "Ethical Sourcing",
     description:
-      "We prioritize the use of renewable energy sources to minimize our environmental footprint.",
-    icon: <FaWind className="text-4xl text-blue-400" />,
+      "We prioritize responsible sourcing practices to ensure fair trade, environmental sustainability, and community welfare.",
+    icon: <FaHandshake className="text-4xl text-blue-400" />,
   },
   {
-    title: "Zero Waste",
+    title: "Eco-Friendly Logistics",
     description:
-      "Our operations are designed to reduce waste and promote recycling to maintain a cleaner environment.",
-    icon: <FaRecycle className="text-4xl text-green-400" />,
+      "Optimized shipping and transport solutions to reduce carbon footprints and enhance efficiency in commodity distribution.",
+    icon: <FaShippingFast className="text-4xl text-green-400" />,
   },
   {
-    title: "Water Conservation",
+    title: "Recycling & Waste Reduction",
     description:
-      "We utilize water-efficient systems and practices to ensure sustainable water usage across our projects.",
-    icon: <FaWater className="text-4xl text-teal-400" />,
+      "We implement recycling programs and sustainable waste management to minimize environmental impact.",
+    icon: <FaRecycle className="text-4xl text-emerald-400" />,
   },
   {
-    title: "Reforestation",
+    title: "Reforestation & Land Restoration",
     description:
-      "We are committed to supporting reforestation projects and increasing green cover to combat climate change.",
-    icon: <FaTree className="text-4xl text-emerald-400" />,
+      "Committed to reforestation projects and land rehabilitation efforts in mining and extraction regions.",
+    icon: <FaTree className="text-4xl text-yellow-400" />,
   },
   {
-    title: "Eco-friendly Materials",
+    title: "Sustainable Trade Practices",
     description:
-      "We utilize sustainable materials and eco-conscious technologies to reduce our impact on the planet.",
-    icon: <FaLeaf className="text-4xl text-lime-400" />,
+      "Our global trading network supports environmentally friendly policies, ensuring responsible and transparent business operations.",
+    icon: <FaGlobe className="text-4xl text-gray-400" />,
+  },
+  {
+    title: "Innovation in Commodity Processing",
+    description:
+      "Investing in modern, energy-efficient technologies for coal and commodity processing with reduced emissions.",
+    icon: <FaIndustry className="text-4xl text-indigo-400" />,
   },
 ];
 
+
 const SustainabilitySection = () => {
   return (
-    <section className="py-16 dark:bg-[#01031a]  text-white">
+    <section className="py-16 dark:bg-[#01031a] text-white">
       <div className="container mx-auto px-6 text-center">
         <motion.h2
           className="text-4xl font-bold uppercase tracking-widest mb-10"
@@ -106,14 +124,14 @@ const SustainabilitySection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          Sustainability & Environmental Responsibility
+          Sustainable Trade & Responsible Sourcing
         </motion.h2>
 
-        <p className="text-lg mb-12  text-gray-200">
-          Our commitment to sustainability guides our actions in every project we undertake, ensuring a greener future for all.
+        <p className="text-lg mb-12 text-gray-200">
+          At Trust Box Global Investment, we are committed to sustainable sourcing, responsible logistics, and eco-conscious trade practices.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sustainabilityPoints.map((point, index) => (
             <motion.div
               key={index}
@@ -124,9 +142,7 @@ const SustainabilitySection = () => {
               whileHover={{ scale: 1.05 }}
             >
               <div className="flex flex-col items-center">
-                <div className="bg-white p-4 rounded-full shadow-md">
-                  {point.icon}
-                </div>
+                <div className="bg-white p-4 rounded-full shadow-md">{point.icon}</div>
                 <h3 className="mt-4 text-2xl font-semibold">{point.title}</h3>
                 <p className="mt-2 text-gray-300">{point.description}</p>
               </div>
@@ -137,6 +153,37 @@ const SustainabilitySection = () => {
     </section>
   );
 };
+
+
+
+const About = () => {
+  return (
+    <section className="py-20 px-6 text-center">
+        <h2 className="text-3xl font-bold">About Trust Box Global Investment</h2>
+        <p className="mt-4 text-lg max-w-3xl mx-auto">
+          We specialize in commodity aggregation, trading, and logistics, ensuring a seamless supply chain from Africa to global markets.
+        </p>
+        <div className="flex flex-wrap justify-center mt-8 gap-8">
+          <div className="flex flex-col items-center w-64">
+            <FaIndustry size={50} className="text-yellow-500" />
+            <p className="mt-2">Mining & Aggregation</p>
+          </div>
+          <div className="flex flex-col items-center w-64">
+            <FaShippingFast size={50} className="text-blue-500" />
+            <p className="mt-2">Logistics & Transportation</p>
+          </div>
+          <div className="flex flex-col items-center w-64">
+            <FaGlobe size={50} className="text-green-500" />
+            <p className="mt-2">Global Trade</p>
+          </div>
+          <div className="flex flex-col items-center w-64">
+            <FaHandshake size={50} className="text-purple-500" />
+            <p className="mt-2">Investment & Partnerships</p>
+          </div>
+        </div>
+      </section>
+  )
+}
 
 const logisticsSteps = [
     {
