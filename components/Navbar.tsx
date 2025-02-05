@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ["Home", "About", "Our Services", "Gallery", "Contact"];
+  const navItems = ["Home", "About", "Our Services", "Contact"];
 
   return (
     // <header className={`fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
